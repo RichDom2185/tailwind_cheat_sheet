@@ -33,10 +33,33 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            Text(
-              'There are ${_controller.listItems.length} items',
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              child: Text(
+                'Showing ${_controller.listItems.length} categories',
+                style: Theme.of(context).textTheme.headlineSmall,
+              ),
             ),
+            Expanded(
+              child: ListView.builder(
+                itemBuilder: (context, index) {
+                  final category = _controller.listItems[index];
+                  return ExpansionTile(
+                    title: Text(category.name),
+                    children: category.classes
+                        .map((record) => ListTile(
+                              title: Text(record.className),
+                              subtitle: Text(record.cssMeaning),
+                            ))
+                        .toList(),
+                  );
+                },
+                // separatorBuilder: (context, index) => const Divider(),
+                itemCount: _controller.listItems.length,
+              ),
+            )
           ],
         ),
       ),
