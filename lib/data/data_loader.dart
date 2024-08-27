@@ -1,8 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:tailwind_dictionary/data/tailwind_category.dart';
-import 'package:tailwind_dictionary/data/tailwind_record.dart';
+import 'package:tailwind_cheat_sheet/data/tailwind_category.dart';
+import 'package:tailwind_cheat_sheet/data/tailwind_record.dart';
 
 class DataLoader {
   static const String _keymapPath = 'assets/keymap.json';
@@ -37,8 +37,8 @@ class DataLoader {
       Map<String, String> keymap, Map<String, Map<String, String>> classes) {
     return keymap.entries
         .map((entry) {
-          final name = entry.key;
-          final classesMap = classes[name];
+          final name = entry.value;
+          final classesMap = classes[entry.key];
           if (classesMap == null) {
             return null;
           }

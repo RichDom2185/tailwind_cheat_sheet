@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tailwind_dictionary/data/data_loader.dart';
-import 'package:tailwind_dictionary/data/tailwind_category.dart';
+import 'package:tailwind_cheat_sheet/data/data_loader.dart';
+import 'package:tailwind_cheat_sheet/data/tailwind_category.dart';
 
 class HomePageController {
   final TextEditingController searchController = TextEditingController();

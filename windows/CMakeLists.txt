@@ -1,10 +1,10 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
-project(tailwind_dictionary LANGUAGES CXX)
+project(tailwind_cheat_sheet LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
-set(BINARY_NAME "tailwind_dictionary")
+set(BINARY_NAME "tailwind_cheat_sheet")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

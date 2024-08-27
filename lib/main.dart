@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tailwind_dictionary/data/data_loader.dart';
-import 'package:tailwind_dictionary/pages/home_page.dart';
+import 'package:tailwind_cheat_sheet/data/data_loader.dart';
+import 'package:tailwind_cheat_sheet/pages/home_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode.dark,
-      title: 'Tailwind Dictionary',
+      title: 'Tailwind Cheat Sheet',
       darkTheme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
           seedColor: Colors.teal,

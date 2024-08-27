@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:tailwind_dictionary/data/tailwind_record.dart';
+import 'package:tailwind_cheat_sheet/data/tailwind_record.dart';
 
 class TailwindCategory {
   final String name;

@@ -1,6 +1,6 @@
 {
-    "name": "tailwind_dictionary",
-    "short_name": "tailwind_dictionary",
+    "name": "tailwind_cheat_sheet",
+    "short_name": "tailwind_cheat_sheet",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "tailwind_dictionary" "\0"
+            VALUE "CompanyName", "com.richdom2185" "\0"
+            VALUE "FileDescription", "tailwind_cheat_sheet" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "tailwind_dictionary" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "tailwind_dictionary.exe" "\0"
-            VALUE "ProductName", "tailwind_dictionary" "\0"
+            VALUE "InternalName", "tailwind_cheat_sheet" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.richdom2185. All rights reserved." "\0"
+            VALUE "OriginalFilename", "tailwind_cheat_sheet.exe" "\0"
+            VALUE "ProductName", "tailwind_cheat_sheet" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

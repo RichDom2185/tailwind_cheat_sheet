@@ -1,4 +1,4 @@
-# tailwind_dictionary
+# tailwind_cheat_sheet
 
 A new Flutter project.
 
