@@ -10,6 +10,16 @@ class TailwindCategory {
     required this.classes,
   });
 
+  TailwindCategory copyWith({
+    String? name,
+    List<TailwindRecord>? classes,
+  }) {
+    return TailwindCategory(
+      name: name ?? this.name,
+      classes: classes ?? this.classes,
+    );
+  }
+
   @override
   String toString() => 'TailwindCategory(name: $name, classes: $classes)';
 
