@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:tailwind_dictionary/data/data_loader.dart';
 import 'package:tailwind_dictionary/pages/home_page.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await DataLoader.init();
   runApp(const MyApp());
 }
 
